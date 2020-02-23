@@ -7,7 +7,7 @@
 /*
  * Your incidents ViewModel code goes here
  */
-define(['accUtils', 'ojs/ojbootstrap', 'knockout', 'ojs/ojknockout', 'ojs/ojavatar' ,'jet-composites/profile-card/loader'],
+define(['accUtils', 'ojs/ojbootstrap', 'knockout', 'ojs/ojknockout', 'ojs/ojavatar' ,'profile-card/loader'],
  function(accUtils) {
 
     function IncidentsViewModel(Bootstrap, ko) {
