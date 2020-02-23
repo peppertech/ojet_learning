@@ -15,7 +15,7 @@ define(['accUtils', 'ojs/ojbootstrap', 'knockout', 'ojs/ojknockout', 'ojs/ojavat
       this.employees = [
         {
           name: 'Deb Raphaely',
-          avatar: '../images/composites/debraphaely.png',
+          avatar: '../../css/images/dep.jpeg',
           title: 'Purchasing Director',
           work: 5171278899,
           email: 'deb.raphaely@oracle.com'
