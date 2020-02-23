@@ -1,0 +1,34 @@
+<!--
+  Copyright (c) 2015, 2019, Oracle and/or its affiliates.
+  The Universal Permissive License (UPL), Version 1.0
+-->
+<div tabindex="0" role="group" class="profile-card-flip-container"
+    on-click="[[flipCard]]" on-keypress="[[flipCard]]" :aria-label="[[$properties.name + ' Press Enter for more info.']]">
+    <div class="profile-card-front-side">
+      <oj-avatar class="profile-card-avatar" role="img" size="lg" initials="[[initials]]" src="[[$properties.avatar]]"
+        :aria-label="[['Avatar of ' + $properties.name]]">
+      </oj-avatar>
+      <h2>
+        <oj-bind-text value="[[$properties.name]]"></oj-bind-text>
+      </h2>
+    </div>
+  
+    <div class="profile-card-back-side">
+      <div class="profile-card-inner-back-side">
+        <h2>
+          <oj-bind-text value="[[$properties.name]]"></oj-bind-text>
+        </h2>
+        <h5>
+          <oj-bind-text value="[[$properties.workTitle]]"></oj-bind-text>
+        </h5>
+        <oj-bind-if test="[[$properties.workNumber != null]]">
+          <h5>Work</h5>
+          <span class="profile-card-text"><oj-bind-text value="[[workFormatted]]"></oj-bind-text></span>
+        </oj-bind-if>
+        <oj-bind-if test="[[$properties.email != null]]">
+          <h5>Email</h5>
+          <span class="profile-card-text"><oj-bind-text value="[[$properties.email]]"></oj-bind-text></span>
+        </oj-bind-if>
+      </div>
+    </div>
+  </div>
